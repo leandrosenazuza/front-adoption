@@ -1,35 +1,36 @@
-import NotificationsIcon from '@mui/icons-material/Notifications';
-import BusinessCenterIcon from '@mui/icons-material/BusinessCenter';
-import LiveHelpIcon from '@mui/icons-material/LiveHelp';
-import TrendingUpIcon from '@mui/icons-material/TrendingUp';
-import DownloadIcon from '@mui/icons-material/Download';
+import PetsIcon from '@mui/icons-material/Pets';
+import MonetizationOnIcon from '@mui/icons-material/MonetizationOn';
+import RiceBowlIcon from '@mui/icons-material/RiceBowl';
+import GroupsIcon from '@mui/icons-material/Groups';
+import PriceCheckIcon from '@mui/icons-material/PriceCheck';
+
 
 const SecondaryDropDownMenu = () => {
 
     const navs = [
         {
-            title: "Notification Preferences",
-            icon: <NotificationsIcon sx={{ fontSize: "18px" }} />,
+            title: "Doe um pet",
+            icon: <PetsIcon sx={{ fontSize: "18px" }} />,
             redirect: "https://www.mykart.com/communication-preferences/push",
         },
         {
-            title: "Sell on Mykart",
-            icon: <BusinessCenterIcon sx={{ fontSize: "18px" }} />,
+            title: "Doação em dinheiro",
+            icon: <MonetizationOnIcon sx={{ fontSize: "18px" }} />,
             redirect: "https://seller.mykart.com/sell-online",
         },
         {
-            title: "24x7 Customer Care",
-            icon: <LiveHelpIcon sx={{ fontSize: "18px" }} />,
+            title: "Doação de alimentos e materiais",
+            icon: <RiceBowlIcon sx={{ fontSize: "18px" }} />,
             redirect: "https://www.mykart.com/helpcentre",
         },
         {
-            title: "Advertise",
-            icon: <TrendingUpIcon sx={{ fontSize: "18px" }} />,
+            title: "Parceiros",
+            icon: <GroupsIcon sx={{ fontSize: "18px" }} />,
             redirect: "https://advertising.mykart.com",
         },
         {
-            title: "Download App",
-            icon: <DownloadIcon sx={{ fontSize: "18px" }} />,
+            title: "Anuncie no site",
+            icon: <PriceCheckIcon sx={{ fontSize: "18px" }} />,
             redirect: "https://www.mykart.com/mobile-apps",
         },
     ]

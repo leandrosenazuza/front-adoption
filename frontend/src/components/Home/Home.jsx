@@ -25,16 +25,16 @@ const Home = () => {
 
   return (
     <>
-      <MetaData title="Online Shopping Site for Mobiles, Electronics, Furniture, Grocery, Lifestyle, Books & More. Best Offers!" />
+      <MetaData title="Adoção de Pets - Pata Amada" />
       <Categories />
       <main className="flex flex-col gap-3 px-2 mt-16 sm:mt-2">
         <Banner />
-        <DealSlider title={"Discounts for You"} />
-        {!loading && <ProductSlider title={"Suggested for You"} tagline={"Based on Your Activity"} />}
-        <DealSlider title={"Top Brands, Best Price"} />
-        {!loading && <ProductSlider title={"You May Also Like..."} tagline={"Based on Your Interest"} />}
-        <DealSlider title={"Top Offers On"} />
-        {!loading && <ProductSlider title={"Don't Miss These!"} tagline={"Inspired by your order"} />}
+        <DealSlider title={"Pets em destaque"} />
+        {!loading && <ProductSlider title={"Sugestões para você"} tagline={"Baseado nas suas atividades"} />}
+        <DealSlider title={"Conheça nossos doguinhos"} />
+        {!loading && <ProductSlider title={"Você pode gostar também..."} tagline={"Basedo nos seus interesses"} />}
+        <DealSlider title={"Conheça nossos gatinhos"} />
+        {!loading && <ProductSlider title={"Você não pode perder"} tagline={"Inspirado nas suas adoções"} />}
       </main>
     </>
   );
