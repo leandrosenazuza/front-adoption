@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import WorkIcon from '@mui/icons-material/Work';
+import PetsIcon from '@mui/icons-material/Pets';
 import StarsIcon from '@mui/icons-material/Stars';
 import CardGiftcardIcon from '@mui/icons-material/CardGiftcard';
 import HelpIcon from '@mui/icons-material/Help';
@@ -8,84 +8,84 @@ import { useLocation } from 'react-router-dom';
 
 const footerLinks = [
   {
-    title: "about",
+    title: "Sobre",
     links: [
       {
-        name: "Contact Us",
+        name: "Contato",
         redirect: "https://www.mykart.com/helpcentre",
       },
       {
-        name: "About Us",
+        name: "Sobre nós",
         redirect: "https://www.mykart.com/about-us",
       },
       {
-        name: "Careers",
+        name: "Nossos pets",
         redirect: "https://www.mykartcareers.com",
       },
       {
-        name: "Mykart Stories",
+        name: "Parceiros",
         redirect: "https://stories.mykart.com",
       },
       {
-        name: "Press",
+        name: "Doação de Pet",
         redirect: "https://stories.mykart.com/category/top-stories/news",
       },
       {
-        name: "Mykart Wholesale",
+        name: "Doação de dinheiro",
         redirect: "https://www.mykartwholesale.com",
       },
       {
-        name: "Corporate Information",
+        name: "Doação de alimentos e materiais",
         redirect: "https://www.mykart.com/corporate-information",
       },
     ]
   },
   {
-    title: "help",
+    title: "Ajuda",
     links: [
       {
-        name: "Payments",
+        name: "Adotar um pet",
         redirect: "https://www.mykart.com/pages/payments",
       },
       {
-        name: "Shipping",
+        name: "Doar um pet",
         redirect: "https://www.mykart.com/pages/shipping",
       },
       {
-        name: "Cancellation & Returns",
+        name: "Doação em dinheiro e materiais",
         redirect: "https://www.mykart.com/helpcentre?catalog=55c9c6edb000002e002c1701&view=CATALOG",
       },
       {
-        name: "FAQ",
+        name: "Perguntas frequentes",
         redirect: "https://www.mykart.com/helpcentre?catalog=55c9c8e2b0000023002c1702&view=CATALOG",
       }
     ]
   },
   {
-    title: "policy",
+    title: "Politica",
     links: [
       {
-        name: "Return Policy",
+        name: "Nossa política",
         redirect: "https://www.mykart.com/pages/returnpolicy",
       },
       {
-        name: "Terms Of Use",
+        name: "Termos de adoção",
         redirect: "https://www.mykart.com/pages/terms",
       },
       {
-        name: "Security",
+        name: "Segurança",
         redirect: "https://www.mykart.com/pages/paymentsecurity",
       },
       {
-        name: "Privacy",
+        name: "Privacidade",
         redirect: "https://www.mykart.com/pages/privacypolicy",
       },
       {
-        name: "Sitemap",
+        name: "Mapa do site",
         redirect: "https://www.mykart.com/sitemap",
       },
       {
-        name: "EPR Compliance",
+        name: "Compliance",
         redirect: "https://www.mykart.com/pages/ewaste-compliance-tnc",
       },
     ]
@@ -140,26 +140,19 @@ const Footer = () => {
             <div className="border-gray-600 h-36 w-1 border-l mr-5 mt-6 hidden sm:block"></div>
             <div className="w-full sm:w-5/12 my-6 mx-5 sm:mx-0 flex flex-col sm:flex-row gap-2 sm:gap-0 justify-between">
               <div className="w-full sm:w-1/2">
-                <h2 className="text-primary-grey">Mail Us:</h2>
-                <p className="mt-2 leading-5">Mykart Internet Private Limited,<br />
-                  Buildings Alyssa, Begonia &<br />
-                  Clove Embassy Tech Village,<br />
-                  Outer Ring Road, ,<br />
-                  NgaraRD, 560103,<br />
-                  Nairobi, Kenya
+                <h2 className="text-primary-grey">Quem somos</h2>
+                <p className="mt-2 leading-5">Área de atuação,<br />
+                  Missão, visão e valores<br />
                 </p>
               </div>
 
               <div className="w-full sm:w-1/2">
-                <h2 className="text-primary-grey">Registered Office Address:</h2>
-                <p className="mt-2 leading-5">Mykart Internet Private Limited,<br />
-                  Buildings Alyssa, Begonia &<br />
-                  Clove Embassy Tech Village,<br />
-                  Outer Ring Road, ,<br />
-                  NgaraRD, 560103,<br />
-                  Nairobi, Kenya <br />
-                  CIN : U51109KA2012PTC066107<br />
-                  Telephone: <a className="text-primary-blue" href="tel:18002029898">+254 124 454 231</a>
+                <h2 className="text-primary-grey">Nosso endereço:</h2>
+                <p className="mt-2 leading-5">R. 9, chacara 165,<br />
+                  Portal dos Ipê,s<br />
+                  Ribeirão Preto - SP,<br />
+                  CEP 14094-608,<br />
+                  Telefone: <a className="text-primary-blue" href="(16) 98816-8301">Telefone: (16) 98816-8301</a>
                 </p>
               </div>
             </div>
@@ -169,20 +162,20 @@ const Footer = () => {
 
           <div className="px-16 py-6 w-full bg-primary-darkBlue hidden sm:flex justify-between items-center text-sm text-white">
             <a href="https://seller.mykart.com/sell-online" target="_blank" rel="noreferrer" className="flex items-center gap-2">
-              <span className="text-yellow-400"><WorkIcon sx={{ fontSize: "20px" }} /></span> Sell On Mykart
+              <span className="text-yellow-400"><PetsIcon sx={{ fontSize: "20px" }} /></span> Adote um pet
             </a>
             <a href="https://brands.mykart.com" target="_blank" rel="noreferrer" className="flex items-center gap-2">
-              <span className="text-yellow-400"><StarsIcon sx={{ fontSize: "20px" }} /></span> Advertise
+              <span className="text-yellow-400"><StarsIcon sx={{ fontSize: "20px" }} /></span> Doe um pet
             </a>
             <a href="https://www.mykart.com/the-gift-card-store" rel="noreferrer" target="_blank" className="flex items-center gap-2">
-              <span className="text-yellow-400"><CardGiftcardIcon sx={{ fontSize: "20px" }} /></span> Gift Cards
+              <span className="text-yellow-400"><CardGiftcardIcon sx={{ fontSize: "20px" }} /></span> Faça uma doação
             </a>
             <a href="https://www.mykart.com/helpcentre" target="_blank" rel="noreferrer" className="flex items-center gap-2">
-              <span className="text-yellow-400"><HelpIcon sx={{ fontSize: "20px" }} /></span> Help Center
+              <span className="text-yellow-400"><HelpIcon sx={{ fontSize: "20px" }} /></span> Ajuda
             </a>
 
-            <span>&copy; -{new Date().getFullYear()} Mykart.com</span>
-            <img draggable="false" src={paymentMethods} alt="Card Payment" />
+            <span>&copy; -{new Date().getFullYear()} Univesp - DRP10-PJI310-A2025S1-T002</span>
+            {/*<img draggable="false" src={paymentMethods} alt="Card Payment" />*/}
           </div>
         </>
       )}

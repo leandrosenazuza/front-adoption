@@ -4,12 +4,11 @@ import "slick-carousel/slick/slick-theme.css";
 import './Banner.css';
 import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
-import gadgetSale from '../../../assets/images/Banners/gadget-sale.jpg';
-import kitchenSale from '../../../assets/images/Banners/kitchen-sale.jpg';
-import poco from '../../../assets/images/Banners/poco-m4-pro.webp';
-import realme from '../../../assets/images/Banners/realme-9-pro.webp';
-import fashionSale from '../../../assets/images/Banners/fashionsale.png';
-import oppo from '../../../assets/images/Banners/oppo-reno7.webp';
+import gadgetSale from '../../../assets/images/Banners/adote_nao_compre.jpg'
+import kitchenSale from '../../../assets/images/Banners/miaudote.jpg';
+import poco from '../../../assets/images/Banners/motivos_adotar_pet.jpg';
+import realme from '../../../assets/images/Banners/quem_nao_tem_cao.jpg';
+
 
 export const PreviousBtn = ({ className, onClick }) => {
   return (
@@ -41,7 +40,7 @@ const Banner = () => {
     nextArrow: <NextBtn />,
   };
 
-  const banners = [gadgetSale, kitchenSale, poco, fashionSale, realme, oppo];
+  const banners = [gadgetSale, kitchenSale, poco, realme];
 
   return (
     <>

@@ -51,7 +51,7 @@ const Cart = () => {
 
                         {/* <!-- saved for later items container --> */}
                         <div className="flex flex-col mt-5 shadow bg-white">
-                            <span className="font-medium text-lg px-2 sm:px-8 py-4 border-b">Saved For Later ({saveForLaterItems.length})</span>
+                            <span className="font-medium text-lg px-2 sm:px-8 py-4 border-b">Salvar para depois ({saveForLaterItems.length})</span>
                             {saveForLaterItems && saveForLaterItems.map((item) => (
                                 <SaveForLaterItem {...item} />
                             )

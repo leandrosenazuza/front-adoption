@@ -1,8 +1,8 @@
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import ExpandLessIcon from '@mui/icons-material/ExpandLess';
-import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
+import PetsIcon from '@mui/icons-material/Pets';
 import Searchbar from './Searchbar';
-import logo from '../../../assets/images/logo.png';
+import logo from '../../../assets/images/logoPata.png';
 import PrimaryDropDownMenu from './PrimaryDropDownMenu';
 import SecondaryDropDownMenu from './SecondaryDropDownMenu';
 import { useState } from 'react';
@@ -27,8 +27,8 @@ const Header = () => {
 
         {/* <!-- logo & search container --> */}
         <div className="flex items-center flex-1">
-          <Link className="h-7 mr-1 sm:mr-4" to="/">
-            <img draggable="false" className="h-full w-full object-contain" src={logo} alt="Mykart Logo" />
+          <Link className="h-20 mr-1 sm:mr-4" to="/">
+            <img draggable="false" className="h-full w-full object-contain" src={logo} alt="Pata Amada Logo" />
           </Link>
 
           <Searchbar />
@@ -50,20 +50,20 @@ const Header = () => {
 
           {togglePrimaryDropDown && <PrimaryDropDownMenu setTogglePrimaryDropDown={setTogglePrimaryDropDown} user={user} />}
 
-          <span className="moreDropDown hidden sm:flex items-center text-white font-medium gap-1 cursor-pointer" onClick={() => setToggleSecondaryDropDown(!toggleSecondaryDropDown)}>More
+          <span className="moreDropDown hidden sm:flex items-center text-white font-medium gap-1 cursor-pointer" onClick={() => setToggleSecondaryDropDown(!toggleSecondaryDropDown)}>Mais
             <span>{toggleSecondaryDropDown ? <ExpandLessIcon sx={{ fontSize: "16px" }} /> : <ExpandMoreIcon sx={{ fontSize: "16px" }} />}</span>
           </span>
 
           {toggleSecondaryDropDown && <SecondaryDropDownMenu />}
 
           <Link to="/cart" className="flex items-center text-white font-medium gap-2 relative">
-            <span><ShoppingCartIcon /></span>
+            <span><PetsIcon /></span>
             {cartItems.length > 0 &&
               <div className="w-5 h-5 p-2 bg-red-500 text-xs rounded-full absolute -top-2 left-3 flex justify-center items-center border">
                 {cartItems.length}
               </div>
             }
-            Cart
+            Adote
           </Link>
         </div>
         {/* <!-- right navs --> */}
