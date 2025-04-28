@@ -61,7 +61,7 @@ const Products = () => {
 
     return (
         <>
-            <MetaData title="All Products | Mykart" />
+            <MetaData title="Todos os Pets | Pata Amada" />
 
             <MinCategory />
             <main className="w-full mt-14 sm:mt-0">
@@ -77,13 +77,13 @@ const Products = () => {
 
                             {/* <!-- filters header --> */}
                             <div className="flex items-center justify-between gap-5 px-4 py-2 border-b">
-                                <p className="text-lg font-medium">Filters</p>
-                                <span className="uppercase text-primary-blue text-xs cursor-pointer font-medium" onClick={() => clearFilters()}>clear all</span>
+                                <p className="text-lg font-medium">Filtros</p>
+                                <span className="uppercase text-primary-blue text-xs cursor-pointer font-medium" onClick={() => clearFilters()}>limpar tudo</span>
                             </div>
 
                             <div className="flex flex-col gap-2 py-3 text-sm overflow-hidden">
 
-                                {/* price slider filter */}
+                                {/* price slider filter 
                                 <div className="flex flex-col gap-2 border-b px-4">
                                     <span className="font-medium text-xs">PRICE</span>
 
@@ -103,12 +103,13 @@ const Products = () => {
                                     </div>
                                 </div>
                                 {/* price slider filter */}
+                                
 
                                 {/* category filter */}
                                 <div className="flex flex-col border-b px-4">
 
                                     <div className="flex justify-between cursor-pointer py-2 pb-4 items-center" onClick={() => setCategoryToggle(!categoryToggle)}>
-                                        <p className="font-medium text-xs uppercase">Category</p>
+                                        <p className="font-medium text-xs uppercase">Categoria</p>
                                         {categoryToggle ?
                                             <ExpandLessIcon sx={{ fontSize: "20px" }} /> :
                                             <ExpandMoreIcon sx={{ fontSize: "20px" }} />
@@ -139,7 +140,7 @@ const Products = () => {
                                 <div className="flex flex-col border-b px-4">
 
                                     <div className="flex justify-between cursor-pointer py-2 pb-4 items-center" onClick={() => setRatingsToggle(!ratingsToggle)}>
-                                        <p className="font-medium text-xs uppercase">ratings</p>
+                                        <p className="font-medium text-xs uppercase">avaliações</p>
                                         {ratingsToggle ?
                                             <ExpandLessIcon sx={{ fontSize: "20px" }} /> :
                                             <ExpandMoreIcon sx={{ fontSize: "20px" }} />
@@ -155,8 +156,8 @@ const Products = () => {
                                                     value={ratings}
                                                     name="ratings-radio-buttons"
                                                 >
-                                                    {[4, 3, 2, 1].map((el, i) => (
-                                                        <FormControlLabel value={el} key={i} control={<Radio size="small" />} label={<span className="flex items-center text-sm">{el}<StarIcon sx={{ fontSize: "12px", mr: 0.5 }} /> & above</span>} />
+                                                    {[5, 4, 3, 2, 1].map((el, i) => (
+                                                        <FormControlLabel value={el} key={i} control={<Radio size="small" />} label={<span className="flex items-center text-sm">{el}<StarIcon sx={{ fontSize: "12px", mr: 0.5 }} /></span>} />
                                                     ))}
                                                 </RadioGroup>
                                             </FormControl>
